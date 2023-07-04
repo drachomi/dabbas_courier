@@ -1,0 +1,165 @@
+* {
+  font-family: 'Poppins';
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+
+/* Header */
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/img/pexels-rdne-stock-project-7363088.jpg');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+#butn {
+  display: none;
+}
+
+.contain {
+  padding-top: 7rem;
+}
+
+.text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* background: red; */
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.text-container h1 {
+  font-weight: 600;
+  font-size: 4rem;
+	line-height: 4.375rem;
+  /* padding-top: 40%; */
+}
+
+.text-container h1 span {
+  color: #34d186;
+}
+
+.text-container .btn-solid-lg {
+  width: 70%;
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #34d186;
+	border-radius: 32px;
+	background: #34d186;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.text-container .btn-solid-lg:hover {
+	border: 1px solid #34d186;
+	background-color: #fff;
+	color: #34d186;
+	text-decoration: none;
+}
+
+/* Choose */
+#choose h1,
+#choose h5,
+#requirements h1 {
+  font-weight: 600;
+  color: #181c3b;
+}
+
+#choose .fa-stack-2x,
+#requirements .fa-stack-2x {
+  color: #34d186;
+}
+
+#choose .fa-stack-1x,
+#requirements .fa-stack-1x {
+  color: #ffffff;
+}
+
+/* Get Started */
+#getStarted {
+  background: #34d186;
+  color: #fff;
+}
+
+#getStarted .fa-stack-1x {
+  color: #34d186;
+}
+
+#getStarted .fa-stack-2x {
+  color: #ffffff;
+}
+
+.copyright {
+	padding-bottom: 0.75rem;
+	text-align: center;
+  background: #f3f7fa;
+}
+
+.copyright p,
+.copyright a {
+	color: #6a747e;
+	text-decoration: none;
+}
+
+@media(max-width: 450px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .p-5 {
+    padding: 1rem;
+  }
+
+  #requirements .row {
+    padding: 0 1rem;
+  }
+
+  #getStarted .col-md-6 {
+    padding: 1.2rem 0;
+  }
+
+  .offcanvas-collapse {
+    display: none;
+  }
+
+  #butn {
+    display: block;
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+  }
+
+  .text-container {
+    padding: 1.6rem;
+  }
+
+  .text-container h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.765rem;
+    padding-top: 40%;
+  }
+
+  .text-container .btn-solid-lg {
+    width: 100%;
+  }
+}
