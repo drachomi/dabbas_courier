@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Dabbas For Couriers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../bootstrap-5.3/css/bootstrap.css">
+  <link rel="stylesheet" href="../fontawesome-5/css/all.css">
+</head>
+<body>
+  <!-- <input type="checkbox" name="" id="check"> -->
+  <nav class="navbar navbar-expand-sm bg-prime px-3 shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">Dabbas</a>
+      <!-- <label for="check" id="sidebar_btn" class="mt-1 d-block">
+        <i class="fas fa-bars text-white ps-5"></i>
+      </label> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-user-alt"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-bell"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">You have a new order: <span class="fw-bold"> Yemi Fashola</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <nav class="navbar bg-prime vert-navbar align-content-start position-fixed h-100">
+    <ul class="navbar-nav px-3 w-100">
+      <li class="nav-item active px-3 my-2 rounded-3">
+        <a class="nav-link text-white" href="dashboard.html">
+          <i class="fas fa-home pe-1"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="nav-item rounded-3 px-3 my-2">
+        <a class="nav-link" href="#">
+          <i class="fas fa-list-alt pe-1"></i>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="nav-item rounded-3 px-3 my-2">
+        <a class="nav-link" href="#">
+          <i class="fas fa-map-marker-alt pe-1"></i>
+          <span>Locations</span>
+        </a>
+      </li>
+      <li class="nav-item rounded-3 px-3 my-2">
+        <a class="nav-link" href="#">
+          <i class="fas fa-headset pe-1"></i>
+          <span>Support</span>
+        </a>
+      </li>
+      <li class="nav-item rounded-3 px-3 my-2">
+        <a class="nav-link" href="skills.html">
+          <i class="fas fa-cog pe-1"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
+  <div class="content">
+    <div class="p-5 bg-light text-center">
+      <h1>Welcome Joseph</h1>
+      <p>Admin Dashboard</p>
+    </div>
+    <div class="table-responsive mt-3 mx-4">
+      <h3 class="text-center">
+        Your Orders
+      </h3>
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Client Name</th>
+            <th>Pickup Address</th>
+            <th>Delivery Address</th>
+            <th>Client Number</th>
+            <th>Recipient Number</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jephthah Onuoha</td>
+            <td>1 Lagos Rd, Ikorodu, Lagos</td>
+            <td>35 Olaife Street, Muleruwa, Gbaga, Ogijo</td>
+            <td>09069283010</td>
+            <td>09011431658</td>
+            <td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                More Details
+              </button>  
+            </td>
+          </tr>
+          <tr>
+            <td>Jephthah Onuoha</td>
+            <td>1 Lagos Rd, Ikorodu, Lagos</td>
+            <td>35 Olaife Street, Muleruwa, Gbaga, Ogijo</td>
+            <td>09069283010</td>
+            <td>09011431658</td>
+            <td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                More Details
+              </button>  
+            </td>
+          </tr>
+          <tr>
+            <td>Jephthah Onuoha</td>
+            <td>1 Lagos Rd, Ikorodu, Lagos</td>
+            <td>35 Olaife Street, Muleruwa, Gbaga, Ogijo</td>
+            <td>09069283010</td>
+            <td>09011431658</td>
+            <td>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                More Details
+              </button>  
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../bootstrap-5.3/js/bootstrap.bundle.js"></script>
+</body>
+</html>

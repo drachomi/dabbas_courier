@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+	font-family: 'Poppins';
 }
 
 body {
@@ -9,6 +10,10 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.bg-prime {
+	background: #34d186 !important;
 }
 
 .btn-solid-reg {

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form | Dabbas For Couriers</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <link rel="stylesheet" href="../bootstrap-5.3/css/bootstrap.css">
+  <link rel="stylesheet" href="../fontawesome-5/css/all.css">
+</head>
+<body class="bg-prime">
+  <div class="row wrapper">
+    <div class="col-md-6 offset-md-3">
+      <div class="formCard card p-4 my-5">
+        <div class="card-body">
+          <form action="" class="form regForm">
+            <div class="intro">
+              <h1 class="fw-bold">Sign Up</h1>
+              <p class="text-muted">Sign up as a Dabbas courier</p>
+            </div>
+            <div class="header d-flex justify-content-center">
+              <ul class="mx-auto list-unstyled d-flex">
+                <li class="form_1_progressbar active">
+                  <div>
+                    <p class="fw-bold">1</p>
+                  </div>
+                </li>
+                <li class="form_2_progressbar">
+                  <div>
+                    <p class="fw-bold">2</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form_wrap">
+              <div class="form_1 data_info">
+                <h3 class="mb-3">Personal Info</h3>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter Fullname" name="fullname">
+                  <label for="fullName">Fullname</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="date" class="form-control" id="dob" placeholder="Enter Fullname" name="date_of_birth">
+                  <label for="dob">Date Of Birth</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Number" name="phone_number">
+                  <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input type="text" class="form-control" id="address" placeholder="Enter email" name="home_address">
+                  <label for="address">Home Address</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input type="text" class="form-control" id="bustop" placeholder="Enter email" name="closest_bustop">
+                  <label for="bustop">Closest Bustop to your home address</label>
+                </div>
+              </div>
+              <div class="form_2 data_info d-none">
+                <h3 class="mb-3">Documentation</h3>
+                <div class="form-floating my-3">
+                  <input type="text" class="form-control" id="b_name" placeholder="Enter email" name="bank_name">
+                  <label for="b_name">Bank Name</label>
+                </div>
+                <div class="form-floating my-3">
+                  <input type="text" class="form-control" id="b_acc_num" placeholder="Enter email" name="bank_account_number">
+                  <label for="b_acc_num">Bank Account Number</label>
+                </div>
+                <div class="form-floating my-3">
+                  <select class="form-select" id="docs" name="docs_list">
+                    <option>NIN (National Identification Number)</option>
+                    <option>PVC (Permanent Voters' Card)</option>
+                    <option>Drivers' License</option>
+                    <option>International Passport</option>
+                  </select>
+                  <label for="docs" class="form-label">Document Type (select one):</label>
+                </div>
+                <div class="form-floating mb-3 mt-3">
+                  <input type="file" class="form-control" id="image" name="image">
+                  <label for="image">Upload Document</label>
+                </div>
+                <div class="form-floating mb-3 mt-3">
+                  <input type="file" class="form-control" id="address_proof" name="proof_address">
+                  <label for="address_proof">Proof of Address (Electricity Bill)</label>
+                </div>
+                <div class="form-floating mt-3 mb-4">
+                  <label for="" class="d-block position-relative">Reason for commute</label>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="work" checked>Work
+                    <label class="form-check-label" for="radio1"></label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="business">Business
+                    <label class="form-check-label" for="radio2"></label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="higher education">School (Higher Education)
+                    <label for="radio3" class="form-check-label"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btns_wrap">
+              <div class="common_btns form_1_btns d-flex justify-content-end">
+                <button type="button" class="btn_next btn btn-solid-reg">Next
+                  <i class="fas fa-chevron-right icon ms-2"></i>
+                </button>
+              </div>
+              <div class="common_btns form_2_btns d-flex justify-content-between d-none">
+                <button type="button" class="btn_back btn btn-solid-reg">
+                  <i class="fas fa-chevron-left me-2 icon"></i>
+                  Back
+                </button>
+                <button type="button" class="btn_done btn btn-solid-reg" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Done
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title text-prime">Registration Successful!!</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p class="text-center">You have successfully been registered as a Dabbas courier.</p>
+        <p class="text-center">Check your email for a link to verify your email address</p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+
+
+  <script src="../bootstrap-5.3/js/bootstrap.bundle.js"></script>
+  <script>
+    // Form buttons
+    var next_btn = document.querySelector('.form_1_btns .btn_next');
+    var back_btn = document.querySelector('.form_2_btns .btn_back');
+    var done_btn = document.querySelector('.form_2_btns .btn_done');
+
+    // Form button groups
+    var form_1_btns = document.querySelector('.form_1_btns');
+    var form_2_btns = document.querySelector('.form_2_btns');
+
+    // Forms
+    var form_1 = document.querySelector('.form_1');
+    var form_2 = document.querySelector('.form_2');
+
+    // Progressbar
+    var form_2_progressbar = document.querySelector('.form_2_progressbar');
+
+    next_btn.addEventListener('click', () => {
+      form_1.classList.add('d-none');
+      form_2.classList.remove('d-none');
+
+      form_1_btns.classList.add('d-none');
+      form_2_btns.classList.remove('d-none');
+      form_2_btns.classList.add('d-flex');
+
+      form_2_progressbar.classList.add('active');
+    });
+
+    back_btn.addEventListener('click', () => {
+      form_2.classList.add('d-none');
+      form_1.classList.remove('d-none');
+
+      form_1_btns.classList.remove('d-none');
+      form_2_btns.classList.add('d-none');
+      form_2_btns.classList.remove('d-flex');
+
+      form_2_progressbar.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
